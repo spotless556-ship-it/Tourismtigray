@@ -1,0 +1,117 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 15px;
+  color: #333;
+}
+
+/* ===== NAVIGATION MENU ===== */
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.link a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0a74da;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.link a:hover {
+  background: #0a74da;
+  color: white;
+}
+
+/* ===== SIGNUP FORM CONTAINER ===== */
+.login {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: 2px solid #0a74da;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+legend h3 {
+  color: #003366;
+}
+
+/* ===== INPUTS & SELECT ===== */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Stylish button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0a74da;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+/* ===== RESPONSIVE FOR MOBILES ===== */
+@media (max-width: 768px) {
+
+  .link {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link a {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .login {
+    padding: 15px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  input,
+  select,
+  textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
